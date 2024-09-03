@@ -17,7 +17,7 @@ namespace CoffeeShopConsoleAppNet60
         }
 
         public CoffeeClass()
-        {
+        {s
             
         }
 

@@ -17,6 +17,11 @@ namespace CoffeeShopConsoleAppNet60
             
         }
 
+        public override double Price()
+        {
+            return base.Price();
+        }
+
         public override string Strength()
         {
             throw new NotImplementedException();
