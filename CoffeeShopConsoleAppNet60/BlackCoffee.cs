@@ -8,23 +8,25 @@ namespace CoffeeShopConsoleAppNet60
 {
     public class BlackCoffee : CoffeeClass
     {
-
-
-
-        public  BlackCoffee() 
+        public BlackCoffee()
             : base()
         {
-            
+            Console.WriteLine($"The discount: {base.Discount}");
         }
 
         public override double Price()
         {
+            
             return base.Price();
+
         }
 
-        public override string Strength()
+        // Implement the Strength method to return an enum value
+        public override CoffeeStrength Strength()
         {
-            throw new NotImplementedException();
+            return CoffeeStrength.Strong; 
         }
+
+
     }
 }

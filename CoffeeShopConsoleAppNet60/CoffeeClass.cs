@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeShopConsoleAppNet60
 {
-    abstract class CoffeeClass
+    public abstract class CoffeeClass
     {
 
         public enum CoffeeStrength
@@ -17,17 +17,24 @@ namespace CoffeeShopConsoleAppNet60
         }
 
         public CoffeeClass()
-        {s
-            
+        { 
+
+            Discount = 0;
         }
+
+        public int Discount { get; set; }
+
 
         public virtual double Price()
         {
             return 20;
         }
 
-        public abstract string Strength();
-        
+        public abstract CoffeeStrength Strength();
 
+        public override string ToString()
+        {
+            return $"{this.GetType().Name}: Price = {Price()}, Strength = {Strength()}";
+        }
     }
 }
