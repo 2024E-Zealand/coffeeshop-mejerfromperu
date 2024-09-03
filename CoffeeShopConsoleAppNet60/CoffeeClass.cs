@@ -34,7 +34,7 @@ namespace CoffeeShopConsoleAppNet60
 
         public override string ToString()
         {
-            return $"{this.GetType().Name}: Price = {Price()}, Strength = {Strength()}";
+            return $"{this.GetType().Name}: Price = {Price()}, Strength = {Strength()}, Discount = {Discount}";
         }
     }
 }
